@@ -16,7 +16,11 @@ function showNotification(message, duration = 3000) {
         notificationDiv.style.display = 'none';
     }, duration);
 }
-
+function handleEnterKey(event) {
+    if (event.key === "Enter") { // 엔터키인지 확인
+        sendMessage(); // 버튼 동작 실행
+    }
+}
 // 초기 안내 메시지 처리
 function showPlaceholder() {
     const placeholder = document.getElementById('placeholder');
