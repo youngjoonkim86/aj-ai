@@ -103,7 +103,7 @@ body {
 /* 레이아웃: 좌측 질문과 우측 채팅 */
 .layout {
     display: flex;
-    background-image: url('img/image-bg.png');
+    background-image: url('img/bg-img.png');
     max-width: 850px;
     width: 100%;
     margin: 10 auto;
@@ -114,6 +114,7 @@ body {
 
 /* 질문 섹션 */
 .questions {
+    position: sticky;
     width: 200px;
     flex-shrink: 0;
     margin-right: 10px;    
@@ -124,22 +125,21 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #FFFFFF;
     border-radius: 5px;
     margin-bottom: 15px;
 }
 
 .question {
     padding: 10px;
-    background: #ffe4e4;
-    border: 1px solid #ff7a95;
+    background: #ffffff;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
-    font-weight: bold;
     margin-bottom: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
 }
 
 .question:hover {
@@ -149,20 +149,21 @@ body {
 .chat-container {
     flex-grow: 1;
     max-width: 590px;
-    background: #fff;
+    background: #f9f9f9;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 560px;
+    margin: 10px 0px 10px 0px;
 }
 
 .messages {
     display: none; /* 메시지가 있을 때만 표시 */
     flex-grow: 1; /* 남는 공간을 모두 채움 */
     overflow-y: auto; /* 스크롤 가능하도록 설정 */
-    padding: 10px; /* 메시지 영역 내부 여백 추가 */
-    background: #f9f9f9; /* 메시지 배경 */
+    padding: 0px 10px 10px 10px; /* 메시지 영역 내부 여백 추가 */
     border-radius: 10px; /* 메시지 영역 모서리 둥글게 */
-    margin-bottom: 10px; /* 입력창과 간격 추가 */
+    height: 488px;
 }
 
 .message {
@@ -209,26 +210,23 @@ body {
     display: flex;
     align-items: center;
     padding: 10px;
-    background: #ffe4e4;
-    border-top: 2px dashed #ff7a95;
     border-radius: 0 0 10px 10px; /* 하단 모서리 둥글게 */
-    margin-top: 10px; /* 위 요소와 간격 추가 */
 }
 
 .input-container input {
     flex: 1;
-    padding: 12px;
+    padding: 16px;
     font-size: 16px;
-    border: 2px solid #ff7a95;
-    border-radius: 25px;
+    border: none;
+    border-radius: 16px;
     outline: none;
     margin-right: 10px;
     background: #fffaf3;
+    box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.2);
 }
 
 .input-container button {
-    background: #ff7a95;
-    color: white;
+    background: #ffffff;
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -237,7 +235,7 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
 }
 
@@ -246,8 +244,8 @@ body {
 }
 
 .input-container button img {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 .event-message {
     margin-top: 20px;
@@ -324,9 +322,8 @@ body {
   }
   
   .component-info table {
-    width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    font-size: smaller;
   }
   
   .component-info table th, .component-info table td {
@@ -353,4 +350,42 @@ body {
   .download-links a:hover {
     text-decoration: underline;
   }
-  
+  .bouncing-text {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ff6600;
+}
+
+.marquee {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: move-left 5s linear infinite;
+}
+
+.marquee .bounce {
+    display: inline-block;
+    animation: bounce 1.5s ease infinite;
+    margin: 0 10px;
+}
+
+/* 텍스트 움직이는 효과 */
+@keyframes move-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* 통통 튀는 효과 */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

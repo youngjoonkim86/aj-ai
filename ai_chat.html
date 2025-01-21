@@ -5,32 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DT 추진본부 Newsletter</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles3.css">
 </head>
 <body>
     <div class="container">
         <!-- Header Section -->
         <div class="header">
-            <div class="meta">제1호 &mdash; 2025년 1월호 &mdash; DT News</div>
-            <h1>DT 추진본부 NEWSLETTER</h1>
-            <div class="subtitle">제1호 - 정비 매뉴얼 ChatBot</div>
+            <img src="img/header.png" width="850px">
         </div>
 
         <!-- Content Section -->
         <div class="content">
-            <h2>요즘 GPT 많이 이용하시죠?</h2>
-            <div class="chatbox">
-                <div class="rounded-button">도요타 7FB 장비 매뉴얼을 찾아줘</div>
-                <div class="response">
-                    <img src="img/gpt-image.png" alt="GPT Icon">
-                    <div>
-                        <p>죄송하지만, 저는 인터넷 검색을 할 수 없기 때문에 도요타 7FB 장비 매뉴얼을 직접 찾아드릴 수 없습니다.</p>
-                        <p>도요타의 공식 웹사이트나 고객 지원 페이지에서 "7FB" 모델을 검색하여 관련 매뉴얼을 찾으실 수 있습니다.</p>
-                    </div>
-                </div>
-            </div>
-            <h2>원하시는 답변이 맞나요...?</h2>
-            <p>그래서 <span class="highlight">우리에게 필요한 Chat bot</span>을 직접 만듭니다!</p>
+            <img src="img/contents.png" width="850px">
         </div>
 
         <!-- Layout Section -->
@@ -48,36 +34,33 @@
             <!-- 우측 채팅 섹션 -->
             <div class="chat-container">
                 <div class="messages-container">
-                    <div id="defaultMessage" class="default-message">
-                        옆에 버튼을 클릭하여 질문을 선택하세요!
+                    <!-- 초기 안내 메시지 -->
+                    <div id="placeholder" class="placeholder">
+                        <img src="img/link.png" alt="Arrow Icon" width="50px" height="50px">
                     </div>
+                    <!-- 실제 메시지 영역 -->
                     <div id="messages" class="messages"></div>
                 </div>
                 <div class="input-container">
-                    <input type="text" id="userInput" placeholder="Type your message..." />
+                    <input type="text" id="userInput" placeholder="Type your message..."  onkeydown="handleEnterKey(event)" />
                     <button onclick="sendMessage()">
                         <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Send" />
                     </button>
                 </div>
             </div>
+            
         </div>
 
-        <!-- Newsletter Event Section -->
-        <div class="newsletter-event">
-            <h2>뉴스레터 이벤트 이름을 지어주세요!</h2>
-            <p>새로운 뉴스레터 이벤트의 멋진 이름을 제안해 주세요.</p>
-            <div class="input-container">
-                <input type="text" id="eventName" placeholder="이벤트 이름을 입력하세요" />
-                <label>
-                    <input type="checkbox" id="agreeTerms" />
-                    <span>개인정보 수집에 동의합니다.</span>
-                </label>
-                <button onclick="submitEventName()">제출</button>
-            </div>
-            <div id="eventMessage" class="event-message"></div>
-            <button onclick="downloadCSV()">CSV 다운로드</button>
+        <div class="event">            
+            <a href="https://forms.gle/2CRST4TP52Uw221u6" target="_blank">
+            <img src="img/event.png" class="full-width"  width="850px" ></a>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <img src="img/footer.png" class="full-width"  width="850px">
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>
