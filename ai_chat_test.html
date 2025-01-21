@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DT 추진본부 Newsletter</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -36,31 +36,31 @@
                 <div class="messages-container">
                     <!-- 초기 안내 메시지 -->
                     <div id="placeholder" class="placeholder">
-                        <img src="img/link.png" alt="Arrow Icon" width="50px" height="50px">
+                        <p>어떻게 할까요?</p>
+                        <p>좌측 버튼을 클릭해주세요.</p>
                     </div>
                     <!-- 실제 메시지 영역 -->
                     <div id="messages" class="messages"></div>
+                    <div id="notification" class="notification" style="display: none;"></div>
                 </div>
                 <div class="input-container">
-                    <input type="text" id="userInput" placeholder="Type your message..."  onkeydown="handleEnterKey(event)" />
+                    <input type="text" id="userInput" placeholder="Type your message..." onkeypress="handleEnterKey(event)" />
                     <button onclick="sendMessage()">
                         <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Send" />
                     </button>
                 </div>
             </div>
-            
         </div>
 
-        <div class="event">            
-            <a href="https://forms.gle/2CRST4TP52Uw221u6" target="_blank">
-            <img src="img/event.png" class="full-width"  width="850px" ></a>
+        <div class="event">
+            <img src="img/event.png" class="full-width">
         </div>
 
         <!-- Footer Section -->
         <div class="footer">
-            <img src="img/footer.png" class="full-width"  width="850px">
+            <img src="img/footer.png" class="full-width">
         </div>
     </div>
-    <script src="script2.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
