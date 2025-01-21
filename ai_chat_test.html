@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DT 추진본부 Newsletter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="img/header.png" width="850px">
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <img src="img/contents.png" width="850px">
+        </div>
+
+        <!-- Layout Section -->
+        <div class="layout">
+            <!-- 좌측 질문 섹션 -->
+            <div class="questions">
+                <select id="questionCategory" onchange="updateQuestions()">
+                    <option value="operational1">AI 정비 챗봇이란</option>
+                    <option value="operational2">AI 정비 챗봇의 필요성</option>
+                    <option value="operational3">AI 정비 챗봇 사용법</option>
+                </select>
+                <div id="questionList"></div>
+            </div>
+
+            <!-- 우측 채팅 섹션 -->
+            <div class="chat-container">
+                <div class="messages-container">
+                    <!-- 초기 안내 메시지 -->
+                    <div id="placeholder" class="placeholder">
+                        <img src="img/link.png" alt="Arrow Icon" width="50px" height="50px">
+                    </div>
+                    <!-- 실제 메시지 영역 -->
+                    <div id="messages" class="messages"></div>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="userInput" placeholder="Type your message..." />
+                    <button onclick="sendMessage()">
+                        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Send" />
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="event">            
+            <a href="https://forms.gle/2CRST4TP52Uw221u6" target="_blank">
+            <img src="img/event.png" class="full-width"  width="850px" ></a>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <img src="img/footer.png" class="full-width"  width="850px">
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
