@@ -12,93 +12,7 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-.chatbox {
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.chatbox .rounded-button {
-    display: inline-block;
-    background-color: #f5f5f5;
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-}
-.chatbox .response {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #000;
-    text-align: left;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-}
-.chatbox .response img {
-    margin-right: 10px;
-    width: 24px;
-    height: 24px;
-}
-.chatbox .response p {
-    color: #000 !important; /* Ensures black text color */
-}
-.header {
-    text-align: center;
-    padding: 20px 0;
-}
-.header h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-.header .subtitle {
-    font-size: 18px;
-    font-weight: normal;
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 20px;
-    margin-top: 10px;
-}
-.header .meta {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 10px;
-}
-.content {
-    margin: 0px ;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    color: #ffffff;
-}
-.content h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-.content p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #ffffff;
-}
-.highlight {
-    color: #ff9900;
-    font-weight: bold;
-}
+
 /* Updated styles for the newly added sections */
 /* 레이아웃: 좌측 질문과 우측 채팅 */
 .layout {
@@ -281,18 +195,14 @@ body {
 .event {
     max-width: 850px; /* 최대 너비 설정 */
     width: 100%; /* 화면 크기 대응 */
-    margin: 0 auto; /* 페이지 중앙 정렬 */
     position: relative;
-    margin-bottom: 40px;
     z-index: 2;
 }
 
 .footer {
     max-width: 850px; /* 최대 너비 설정 */
     width: 100%; /* 화면 크기 대응 */
-    margin: 0 auto; /* 페이지 중앙 정렬 */
     position: relative;
-    margin-top: 20px;
     z-index: 3;
 }
 .error-section {

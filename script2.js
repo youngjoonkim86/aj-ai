@@ -123,8 +123,23 @@ function getAIResponse(message) {
             <b>[3차 오픈] 클라크 (EPX, CRX)</b> : 클라크 모델 매뉴얼 디지털화 및 테스트<br/>
             <b>[4차 오픈] 현대 (30D-9, 30D-9H)</b> : 현대 주요 모델 매뉴얼 디지털화<br/>
             <b>[5차 오픈] 두산 (D30S-7, D30SE-7, D30SE-9)</b> : 두산 모델 매뉴얼 디지털화 및 최종 통합<br/>
-        </div><br/>
+        </div>
         프로젝트는 총 5단계로 구성되어 있으며, 도요타 7FB와 7FBR 모델은 3월 내 1차 오픈 후 바로 사용이 가능할 예정입니다. 2차는 도요타 8FB와 8FBR 모델로 4월 중 오픈될 예정이며, 3차인 클라크는 6월, 4차인 현대는 7월, 두산은 9월에 오픈될 예정입니다.`,
+        '이주연 과장님!' : '저 괴롭히지 마요',
+        '최광해' : `<div class="bouncing-text">
+                    최! 광! 해! 아이 할때 해!<br />
+                    <div class="marquee">
+                        <span class="bounce">해</span>
+                        <span class="bounce">해</span>
+                        <span class="bounce">해</span>
+                        <span class="bounce">해</span>
+                        <span class="bounce">해</span>
+                        <span class="bounce">해</span>
+                    </div>
+                </div>
+                `,
+        '엄태승' : '1. 제가 할게 좀 남아서 \n 2. 현업 문의건 처리하고 가겠습니다!',
+        'DT추진본부' : 'DT추진본부는 3개팀 1개 직속 파트로 구성되어 있습니다.',
         'AI 정비 챗봇은 어떻게 사용하나요? 예시를 들어주실 수 있나요?': `
             <div>
                 <p>인터넷이 연결된 기기에서 간단히 접속할 수 있으며, <b>모델명과 증상만 입력</b>하면 됩니다. 아래는 POC에서 구현된 실제 작동 예시 입니다.</p>

@@ -281,18 +281,14 @@ body {
 .event {
     max-width: 850px; /* 최대 너비 설정 */
     width: 100%; /* 화면 크기 대응 */
-    margin: 0 auto; /* 페이지 중앙 정렬 */
     position: relative;
-    margin-bottom: 40px;
     z-index: 2;
 }
 
 .footer {
     max-width: 850px; /* 최대 너비 설정 */
     width: 100%; /* 화면 크기 대응 */
-    margin: 0 auto; /* 페이지 중앙 정렬 */
     position: relative;
-    margin-top: 20px;
     z-index: 3;
 }
 .error-section {
